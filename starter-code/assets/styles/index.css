@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-image: url('../home/background-home-desktop.jpg');
+  min-height: 100vh;
+  min-width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topnav {
+  background-color: rgba(68, 62, 62, 0.212);
+  backdrop-filter: blur(20px);
+  min-height: 9vh;
+  position: absolute;
+  top: 6vh;
+  right: 0;
+  padding-right: 35px;
+  min-width: 60vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+}
