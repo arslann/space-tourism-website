@@ -101,7 +101,22 @@
   max-width: 20vw;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
+}
+.dot {
+  margin-top: 60px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.dot:hover:not(.active) {
+  border-bottom: 6px solid;
+  opacity: 0.5;
+}
+
+.active {
+  border-bottom: 4px solid;
+  color: #ffffff;
 }
 
 .sliderBtn {

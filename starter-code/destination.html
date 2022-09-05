@@ -22,19 +22,23 @@
           <h5 class="title">PICK YOUR DESTINATION</h5>
         </div>
         <div class="imgDiv">
-          <img src="./assets/destination/image-moon.webp" alt="" />
+          <img
+            id="planet_img"
+            src="./assets/destination/image-moon.webp"
+            alt=""
+          />
         </div>
       </div>
 
       <div class="textBox">
         <div class="sliderBtn">
-          <span class="dot" onclick="currentSlide(1)">MOON</span>
-          <span class="dot" onclick="currentSlide(2)">MARS</span>
-          <span class="dot" onclick="currentSlide(3)">EUROPA</span>
-          <span class="dot" onclick="currentSlide(4)">TITAN</span>
+          <span class="dot active" onclick="currentSlide(0)">MOON</span>
+          <span class="dot" onclick="currentSlide(1)">MARS</span>
+          <span class="dot" onclick="currentSlide(2)">EUROPA</span>
+          <span class="dot" onclick="currentSlide(3)">TITAN</span>
         </div>
-        <h2 class="textBox_title">MOON</h2>
-        <div class="text">
+        <h2 class="textBox_title" id="textbox_title">MOON</h2>
+        <div class="text" id="textbox_text">
           See our planet as you’ve never seen it before. A perfect relaxing trip
           away to help regain perspective and come back refreshed. While you’re
           there, take in some history by visiting the Luna 2 and Apollo 11
@@ -43,11 +47,11 @@
         <div class="distanceDiv">
           <div class="avg_distance">
             <p class="subheading2">AVG. DISTANCE</p>
-            <span class="subheading1">384,400 KM</span>
+            <span class="subheading1" id="distance_km">384,400 KM</span>
           </div>
           <div class="travel_timeDiv">
             <p class="subheading2">EST. TRAVEL TIME</p>
-            <span class="subheading1">3 DAYS</span>
+            <span class="subheading1" id="distance_time">3 DAYS</span>
           </div>
         </div>
       </div>
