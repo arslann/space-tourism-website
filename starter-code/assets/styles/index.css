@@ -91,7 +91,7 @@
 }
 
 .topnav {
-  background-color: rgba(68, 62, 62, 0.212);
+  background-color: rgba(68, 62, 62, 0.1);
   backdrop-filter: blur(20px);
   min-height: 9vh;
   position: absolute;
@@ -106,7 +106,7 @@
   gap: 20px;
 }
 .topnav a {
-  padding: 14px 16px;
+  padding: 35px 16px;
   text-decoration: none;
   font-family: 'Barlow Condensed';
   font-style: normal;
@@ -116,6 +116,11 @@
   letter-spacing: 2.7px;
   color: #ffffff;
 }
-.topnav a:hover {
-  transform: scale(1.1);
+.topnav a:hover:not(.active) {
+  border-bottom: 6px solid;
+  opacity: 0.5;
+}
+
+.active {
+  border-bottom: 6px solid;
 }
