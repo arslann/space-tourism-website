@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/destination.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="./index.html">00 Home</a>
+      <a class="active" href="#">01 Destination</a>
+      <a href="#Crew">02 Crew</a>
+      <a href="#Technology">03 Technology</a>
+    </div>
+
+    <div class="container">
+      <div class="img_title">
+        <div class="titleDiv">
+          <span class="num">01</span>
+          <h5 class="title">PICK YOUR DESTINATION</h5>
+        </div>
+        <div class="imgDiv">
+          <img src="./assets/destination/image-moon.webp" alt="" />
+        </div>
+      </div>
+
+      <div class="textBox">
+        <div class="sliderBtn">
+          <span class="dot" onclick="currentSlide(1)">MOON</span>
+          <span class="dot" onclick="currentSlide(2)">MARS</span>
+          <span class="dot" onclick="currentSlide(3)">EUROPA</span>
+          <span class="dot" onclick="currentSlide(4)">TITAN</span>
+        </div>
+        <h2 class="textBox_title">MOON</h2>
+        <div class="text">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </div>
+        <div class="distanceDiv">
+          <div class="avg_distance">
+            <p class="subheading2">AVG. DISTANCE</p>
+            <span class="subheading1">384,400 KM</span>
+          </div>
+          <div class="travel_timeDiv">
+            <p class="subheading2">EST. TRAVEL TIME</p>
+            <span class="subheading1">3 DAYS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
