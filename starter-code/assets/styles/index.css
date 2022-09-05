@@ -74,6 +74,13 @@
   color: #0b0d17;
   background-color: #ffffff;
 }
+
+.circle:hover {
+  cursor: pointer;
+  outline: 60px solid rgba(228, 223, 223, 0.4);
+  transition: outline 1s;
+}
+
 .circle > h3 {
   position: relative;
   top: 42%;
