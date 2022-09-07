@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Destination</title>
     <link rel="stylesheet" href="./assets/styles/destination.css" />
   </head>
   <body>
     <div class="topnav">
       <a href="./index.html">00 Home</a>
       <a class="active" href="#">01 Destination</a>
-      <a href="#Crew">02 Crew</a>
-      <a href="#Technology">03 Technology</a>
+      <a href="./crew.html">02 Crew</a>
+      <a href="./technology.html">03 Technology</a>
     </div>
 
     <div class="container">
@@ -22,23 +22,23 @@
           <h5 class="title">PICK YOUR DESTINATION</h5>
         </div>
         <div class="imgDiv">
-          <img
-            id="planet_img"
-            src="./assets/destination/image-moon.webp"
-            alt=""
-          />
+          <img id="img" src="./assets/destination/image-moon.webp" alt="" />
         </div>
       </div>
 
       <div class="textBox">
         <div class="sliderBtn">
-          <span class="dot active" onclick="currentSlide(0)">MOON</span>
-          <span class="dot" onclick="currentSlide(1)">MARS</span>
-          <span class="dot" onclick="currentSlide(2)">EUROPA</span>
-          <span class="dot" onclick="currentSlide(3)">TITAN</span>
+          <span class="dot active" onclick="currentSlide(0, 'destination')"
+            >MOON</span
+          >
+          <span class="dot" onclick="currentSlide(1,'destination')">MARS</span>
+          <span class="dot" onclick="currentSlide(2,'destination')"
+            >EUROPA</span
+          >
+          <span class="dot" onclick="currentSlide(3,'destination')">TITAN</span>
         </div>
-        <h2 class="textBox_title" id="textbox_title">MOON</h2>
-        <div class="text" id="textbox_text">
+        <h2 class="textBox_title" id="descriptionTitle">MOON</h2>
+        <div class="text" id="description">
           See our planet as you’ve never seen it before. A perfect relaxing trip
           away to help regain perspective and come back refreshed. While you’re
           there, take in some history by visiting the Luna 2 and Apollo 11
