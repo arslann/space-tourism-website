@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+.container {
+  min-height: 100vh;
+
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-image: url('../technology/background-technology-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  gap: 50px;
+}
+
 .topnav {
   background-color: rgba(68, 62, 62, 0.1);
   backdrop-filter: blur(20px);
@@ -40,30 +56,19 @@
   border-bottom: 6px solid;
 }
 
-.container {
-  min-height: 100vh;
-
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-  background-image: url('../crew/background-crew-desktop.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  gap: 50px;
-}
-
 .box {
-  max-width: 25vw;
   display: flex;
   flex-direction: column;
-  gap: 10vh;
   min-width: 500px;
+  max-width: 32vw;
+  margin-left: auto;
+  gap: 10vh;
 }
-.title {
+.image_div {
+  margin-left: auto;
+  margin-top: 10%;
+}
+.title-div_title {
   display: inline;
   font-family: 'Barlow Condensed';
   font-style: normal;
@@ -73,12 +78,10 @@
   /* identical to box height */
 
   letter-spacing: 4.725px;
-  text-transform: uppercase;
 
   color: #ffffff;
 }
-
-.num {
+.title-div_num {
   font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 700;
@@ -94,7 +97,53 @@
   opacity: 0.25;
   margin-right: 15px;
 }
-.profession {
+.text-div_title {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+
+  color: #d0d6f9;
+}
+.text-div_name {
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+
+  color: #ffffff;
+}
+.text-div_description {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  color: #d0d6f9;
+}
+
+.dot {
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+
+  display: inline-block;
+
+  border-radius: 50%;
+
+  border: 2px solid rgba(255, 255, 255, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot > span {
   font-family: 'Bellefair';
   font-style: normal;
   font-weight: 400;
@@ -102,66 +151,32 @@
   line-height: 37px;
   /* identical to box height */
 
-  text-transform: uppercase;
-
-  color: #ffffff;
-
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-.name {
-  font-family: 'Bellefair';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 53px;
-  line-height: 64px;
-  text-transform: uppercase;
-
-  color: #ffffff;
+  letter-spacing: 2px;
+  margin-left: 2px;
+  z-index: 2;
 }
 
-.description {
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 34px;
-  /* or 209% */
-
-  color: #d0d6f9;
-  max-width: 420px;
-}
-.text_div {
+.slider_buttons {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
 }
-
-.image_div {
-  position: relative;
-  height: 100vh;
+.text-box {
   display: flex;
-  align-items: flex-end;
+  gap: 2rem;
 }
-
-.image_div > img {
-  height: 70vh;
-  position: relative;
-  max-width: 600px;
+.text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-
-.dot {
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  background: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.17;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin: 0 10px;
+.title-div {
+  margin-bottom: 5vh;
 }
 .selectedSlide {
-  opacity: 1;
+  background-color: #ffffff;
+}
+
+.dot.selectedSlide span {
+  color: black;
 }
