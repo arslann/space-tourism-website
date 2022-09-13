@@ -43,11 +43,12 @@ function currentSlide(num, slide) {
   //change description
   text.innerText = selectedSlide[num].description;
 
-  //change role
-  role.innerText = selectedSlide[num].role;
-
   //change planet image
-  image.src = selectedSlide[num].images.webp;
+  image.src =
+    selectedSlide[num].images.webp || selectedSlide[num].images.portrait;
+
+  //change role
+  if (role) role.innerText = selectedSlide[num].role;
 
   //change distance and travel time
 
